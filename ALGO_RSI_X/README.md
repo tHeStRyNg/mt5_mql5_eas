@@ -1,6 +1,6 @@
-### Algo_RSI_X 
+### ALGO_RSI_X 
 
-Algo_RSI_X oscillator is an RSI with a minimum delay in the form of a colored histogram.
+ALGO_RSI_X oscillator is an RSI with a minimum delay in the form of a colored histogram.
 
 It features thirteen configurable parameters:
 
