@@ -25,3 +25,8 @@ Fifth RSI period - fifth calculated RSI period
 - If Zero Lag RSI values are below zero and falling, the histogram bars are colored red
 - If Zero Lag RSI values are below zero and rising, the histogram bars are colored light-red
 
+#### Example
+
+![image](https://user-images.githubusercontent.com/118682909/220932249-906ebe0b-daf5-4f0b-aeb7-4fa1283d554b.png)
+
+
