@@ -9,7 +9,7 @@
 #property link      "https://www.algorithmic.one"
 #property version   "1.00"
 
-#property description "RSI_V5 BOT, TRIGGERS A BUY WHEN RSI <= 30 AND TRIGGERS A SELL WHEN RSI>=70 "
+#property description "RSI_V5 BOT, TRIGGERS A BUY WHEN RSI <= 30 AND TRIGGERS A SELL WHEN RSI >= 70"
 //---
 
 #include <Trade\Trade.mqh>
@@ -254,7 +254,7 @@ void OpenPosition(const ENUM_POSITION_TYPE pos_type)
    Buy Limit order         |  Ask               |  Ask-OpenPrice  >= SYMBOL_TRADE_FREEZE_LEVEL
    Buy Stop order          |  Ask	            |  OpenPrice-Ask  >= SYMBOL_TRADE_FREEZE_LEVEL
    Sell Limit order        |  Bid	            |  OpenPrice-Bid  >= SYMBOL_TRADE_FREEZE_LEVEL
-   Sell Stop order	       |  Bid	            |  Bid-OpenPrice  >= SYMBOL_TRADE_FREEZE_LEVEL
+   Sell Stop order	      |  Bid	            |  Bid-OpenPrice  >= SYMBOL_TRADE_FREEZE_LEVEL
    Buy position            |  Bid	            |  TakeProfit-Bid >= SYMBOL_TRADE_FREEZE_LEVEL 
                            |                    |  Bid-StopLoss   >= SYMBOL_TRADE_FREEZE_LEVEL
    Sell position           |  Ask	            |  Ask-TakeProfit >= SYMBOL_TRADE_FREEZE_LEVEL
@@ -263,7 +263,7 @@ void OpenPosition(const ENUM_POSITION_TYPE pos_type)
    Buying is done at the Ask price                 |  Selling is done at the Bid price
    ------------------------------------------------|----------------------------------
    TakeProfit        >= Bid                        |  TakeProfit        <= Ask
-   StopLoss          <= Bid	                       |  StopLoss          >= Ask
+   StopLoss          <= Bid	                     |  StopLoss          >= Ask
    TakeProfit - Bid  >= SYMBOL_TRADE_STOPS_LEVEL   |  Ask - TakeProfit  >= SYMBOL_TRADE_STOPS_LEVEL
    Bid - StopLoss    >= SYMBOL_TRADE_STOPS_LEVEL   |  StopLoss - Ask    >= SYMBOL_TRADE_STOPS_LEVEL
 */
@@ -347,7 +347,7 @@ bool RefreshRates()
   }
 
 //+------------------------------------------------------------------+
-//| Open Buy position                                                |
+//| ORDER MANAGEMENT                                               |
 //+------------------------------------------------------------------+
 uint OpenSell(int magic,double lot,double StopLoss,double TakeProfit, string comment)
   {

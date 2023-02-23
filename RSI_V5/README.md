@@ -2,6 +2,9 @@
 
 #### DESCRIPTION
 
+RSI_V5 BOT, TRIGGERS A BUY WHEN RSI <= 30 AND TRIGGERS A SELL WHEN RSI >= 70
+
+##### Input Parameters
 
 
 #### FUNCTIONS
