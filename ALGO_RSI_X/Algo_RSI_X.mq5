@@ -1,5 +1,5 @@
 //+------------------------------------------------------------------+
-//|                                                    AI_client.mq5 |
+//|                                                    Algo_RSI_X.mq5 |
 //|                                Copyright 2023, Algorithmic, GMBH |
 //|                                      https://www.algorithmic.one |
 //+------------------------------------------------------------------+
@@ -9,13 +9,13 @@
 #property copyright "Copyright 2023, Algorithmic, GMBH"
 #property link      "https://www.algorithmic.one"
 #property version   "1.00"
-#property description "Algo_RSI_IND_X"
+#property description "Algo_RSI_X"
 
 #property indicator_separate_window
 #property indicator_buffers 9
 #property indicator_plots   1
 //--- plot RSIZL
-#property indicator_label1  "Algo_RSI_IND_X"
+#property indicator_label1  "Algo_RSI_X"
 #property indicator_type1   DRAW_COLOR_HISTOGRAM
 #property indicator_color1  clrGreen,clrMediumAquamarine,clrRed,clrLightSalmon,clrDarkGray
 #property indicator_style1  STYLE_SOLID
@@ -97,7 +97,7 @@ int OnInit()
    SetIndexBuffer(7,BufferRSI4,INDICATOR_CALCULATIONS);
    SetIndexBuffer(8,BufferRSI5,INDICATOR_CALCULATIONS);
 //--- setting indicator parameters
-   IndicatorSetString(INDICATOR_SHORTNAME,"Zero Lag RSI");
+   IndicatorSetString(INDICATOR_SHORTNAME,"Algo_RSI_X");
    IndicatorSetInteger(INDICATOR_DIGITS,Digits());
    IndicatorSetInteger(INDICATOR_LEVELS,2);
 //--- setting buffer arrays as timeseries
