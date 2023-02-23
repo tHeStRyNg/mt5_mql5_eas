@@ -1,11 +1,16 @@
 //+------------------------------------------------------------------+
-//|                                               Algo_RSI_IND_X.mq5 |
+//|                                                    AI_client.mq5 |
 //|                                Copyright 2023, Algorithmic, GMBH |
 //|                                      https://www.algorithmic.one |
 //+------------------------------------------------------------------+
 
 /* Important - https://www.mql5.com/en/docs/constants/errorswarnings/enum_trade_return_codes */
+
+#property copyright "Copyright 2023, Algorithmic, GMBH"
+#property link      "https://www.algorithmic.one"
+#property version   "1.00"
 #property description "Algo_RSI_IND_X"
+
 #property indicator_separate_window
 #property indicator_buffers 9
 #property indicator_plots   1
