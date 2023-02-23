@@ -159,14 +159,14 @@ int OnCalculate(const int rates_total,
                 const long &volume[],
                 const int &spread[])
   {
-//--- Установка массивов буферов как таймсерий
+//--- Setting buffer arrays as timeseries
    ArraySetAsSeries(open,true);
    ArraySetAsSeries(high,true);
    ArraySetAsSeries(low,true);
    ArraySetAsSeries(close,true);
-//--- Проверка и расчёт количества просчитываемых баров
+//--- Checking and calculating the number of calculated bars
    if(rates_total<fmax(period_max,4)) return 0;
-//--- Проверка и расчёт количества просчитываемых баров
+//--- Checking and calculating the number of calculated bars
    int limit=rates_total-prev_calculated;
    if(limit>1)
      {
@@ -181,7 +181,7 @@ int OnCalculate(const int rates_total,
       ArrayInitialize(BufferRSI4,0);
       ArrayInitialize(BufferRSI5,0);
      }
-//--- Подготовка данных
+//--- Data preparation
    int count=(limit>1 ? rates_total : 1),copied=0;
    copied=CopyBuffer(handle_rsi1,0,0,count,BufferRSI1);
    if(copied!=count) return 0;
@@ -194,7 +194,7 @@ int OnCalculate(const int rates_total,
    copied=CopyBuffer(handle_rsi5,0,0,count,BufferRSI5);
    if(copied!=count) return 0;
 
-//--- Расчёт индикатора
+//--- Indicator calculation
    for(int i=limit; i>=0 && !IsStopped(); i--)
      {
       double RSI1=BufferRSI1[i];
