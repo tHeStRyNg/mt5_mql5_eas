@@ -27,6 +27,6 @@ Fifth RSI period - fifth calculated RSI period
 
 #### Example
 
-![image](https://user-images.githubusercontent.com/118682909/220932249-906ebe0b-daf5-4f0b-aeb7-4fa1283d554b.png)
+![image](https://user-images.githubusercontent.com/118682909/220932342-9eb34fb0-955f-4c3f-b9f0-d85d4fa26981.png)
 
 
