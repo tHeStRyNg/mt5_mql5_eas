@@ -4,8 +4,8 @@
 
 #### Indicators used:
 
-- EMA (default period 34)
-- CCI (default MA period 50)
+- EMA (default period 30)
+- CCI (default MA period 30)
 - MACD (default MT5 settings)
 
 ### STRATEGY:
